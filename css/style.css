@@ -1,14 +1,98 @@
-*{
+/* *{
     box-sizing: content-box;
     margin: 0;
-}
+} */
 
-body{
-    background-image:url('../img/background.jpg');
+/* body{ */
+    /* background-image:url('../img/background.jpg');
     background-attachment:fixed;
     background-repeat: no-repeat;
-    background-size: cover;
-}
-h1{
+    background-size: cover; */
+    /* margin:0; */
+/* } */
+/* h1{
     color: blue;
+}
+.main{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+    border: solid black 1px;
+ 
+  
+}
+.blurred-bg-container{
+    background: url('../img/background.jpg');
+    height: 100vh;
+    background-size: cover
+}
+.blurred-bg-container .content{
+    background: #fff;
+    width: 50%;
+    height: 40%;
+    border-radius: 8px;
+    box-shadow: 0 0 32px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 50%;
+    left: 40% 
+} */
+body,
+.blurred-bg-container .content h1 {
+  margin: 0;
+}
+
+.blurred-bg-container {
+  background: url('../img/background.jpg');
+  height: 119vh; /* =h */
+  background-size: cover;
+}
+
+.blurred-bg-container .content {
+    background: inherit;
+    width: 68.2%;
+    height: 76%;
+    /* border-radius: 8px; */
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 68%;
+    left: 53.3%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.blurred-bg-container .text {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  box-sizing: border-box; /* so that padding is included in height */
+}
+
+.blurred-bg-container .blur {
+  background: inherit;
+  height: 100vh; /* h */
+  width: 166.667%; /* (100/cw) x 100% */
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(
+    -10%,
+    -30%
+  ); /* - [cl - (cw/2)] % ,  -[ct - (ch/2)] % */
+  filter: blur(20px);
+  z-index: -1;
+}
+.text h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+
+}
+.icons{
+    width: 330px;
+    height: 30px;
+    border: solid black 1px
 }
