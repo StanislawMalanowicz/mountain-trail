@@ -1,3 +1,106 @@
+
+body,
+.blurred-bg-container .content h1 {
+  margin: 0;
+}
+
+.blurred-bg-container {
+  background: url('../img/background.jpg');
+  height: 119vh; /* =h */
+  background-size: cover;
+}
+
+.blurred-bg-container .content {
+    background: inherit;
+    width: 68.2%;
+    height: 76%;
+    /* border-radius: 8px; */
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 68%;
+    left: 53.3%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.blurred-bg-container .text {
+  padding: 16px;
+  /* background: rgba(255, 255, 255, 0.3); */
+  height: 100%;
+  box-sizing: border-box; /* so that padding is included in height */
+}
+
+.blurred-bg-container .blur {
+    background: inherit;
+    height: 100vh;
+    width: 166.667%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate( -10%, -20% );
+    filter: blur(5px);
+    z-index: -1;
+}
+.text h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 30px;
+    border: solid black 1px;
+    border-bottom: solid gray 1px;
+    box-sizing: border-box
+}
+/* .icons img{
+    margin-bottom: 30px
+} */
+.blurred-bg-container .info{
+    height: 300px;
+    width: 300px;
+    border: solid black 1px;
+    box-sizing: border-box
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* *{
     box-sizing: content-box;
     margin: 0;
@@ -40,59 +143,3 @@
     top: 50%;
     left: 40% 
 } */
-body,
-.blurred-bg-container .content h1 {
-  margin: 0;
-}
-
-.blurred-bg-container {
-  background: url('../img/background.jpg');
-  height: 119vh; /* =h */
-  background-size: cover;
-}
-
-.blurred-bg-container .content {
-    background: inherit;
-    width: 68.2%;
-    height: 76%;
-    /* border-radius: 8px; */
-    box-shadow: 0 0 32px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 68%;
-    left: 53.3%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-}
-
-.blurred-bg-container .text {
-  padding: 16px;
-  background: rgba(255, 255, 255, 0.3);
-  height: 100%;
-  box-sizing: border-box; /* so that padding is included in height */
-}
-
-.blurred-bg-container .blur {
-  background: inherit;
-  height: 100vh; /* h */
-  width: 166.667%; /* (100/cw) x 100% */
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translate(
-    -10%,
-    -30%
-  ); /* - [cl - (cw/2)] % ,  -[ct - (ch/2)] % */
-  filter: blur(20px);
-  z-index: -1;
-}
-.text h1{
-    color: white;
-    text-align: center;
-    font-size: 40px;
-
-}
-.icons{
-    width: 330px;
-    height: 30px;
-    border: solid black 1px
-}
