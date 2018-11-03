@@ -1,77 +1,74 @@
-
 body,
 .blurred-bg-container .content h1 {
   margin: 0;
 }
 
-.blurred-bg-container {
-  background: url('../img/background.jpg');
-  height: 119vh; /* =h */
-  background-size: cover;
-}
 
-.blurred-bg-container .content {
+.blurred-bg-container {
+
+    background: url(../img/background.jpg);
+   
+    height: 119vh;
+    background-size: cover;
+    
+    
+}
+.blurred-bg-container .content{
+    /* display: none; */
     background: inherit;
     width: 68.2%;
     height: 76%;
-    /* border-radius: 8px; */
-    box-shadow: 0 0 32px rgba(0, 0, 0, 0.5);
+    /* border: solid 1px red; */
     position: absolute;
     top: 68%;
-    left: 53.3%;
+    left: 53.3%; 
     transform: translate(-50%, -50%);
     overflow: hidden;
+    z-index: 1;
+    
 }
-
-.blurred-bg-container .text {
-  padding: 16px;
-  /* background: rgba(255, 255, 255, 0.3); */
-  height: 100%;
-  box-sizing: border-box; /* so that padding is included in height */
-}
-
-.blurred-bg-container .blur {
+.blurred-bg-container .blur{
     background: inherit;
     height: 100vh;
     width: 166.667%;
+    /* border: solid 1px green; */
     position: absolute;
-    left: 0;
     top: 0;
-    transform: translate( -10%, -20% );
+    left: 0;
+    transform: translate(-10%, -20%);
     filter: blur(5px);
     z-index: -1;
 }
-.text h1{
-    color: white;
-    text-align: center;
-    font-size: 40px;
-
-}
-.icons{
+.blurred-bg-container .icons{
     display: flex;
     justify-content: space-around;
-    width: 100%;
-    height: 30px;
-    border: solid black 1px;
-    border-bottom: solid gray 1px;
-    box-sizing: border-box
+    border-bottom: 1px grey solid;
 }
-/* .icons img{
-    margin-bottom: 30px
-} */
+.icons img{
+    cursor: pointer;
+    padding-bottom: 24px
+}
+.blurred-bg-container .text {
+    padding: 32px;
+    /* background: rgba(255, 255, 255, 0.3); */
+    /* height: 100%; */
+    box-sizing: border-box; /* so that padding is included in height */
+  }
+
+  .text h1{
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+
 .blurred-bg-container .info{
-    height: 300px;
-    width: 300px;
-    border: solid black 1px;
-    box-sizing: border-box
+    /* height: 100%; */
+    box-sizing: border-box;
+    padding: 16px;
+    /* z-index: 1; */
 }
-
-
-
-
-
-
-
 
 
 
