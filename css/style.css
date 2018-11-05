@@ -136,16 +136,26 @@ margin: 20px;
     width: 100%;
 
 }
+label {
+    font-size: 14px;
+    color: white;
 
-.form label{
+   }
+   
+  
+input[type="checkbox"]{
+    /* -webkit-appearance: none; */
+    display: inline;
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+    background-color: green;
+
+}   
+/* .form label{
     display: inline;
     color: white;
     font-size: 10px;
-
-}
-/* .form input[type="checkbox"]{
-    
-    size: 5px
 
 } */
 
