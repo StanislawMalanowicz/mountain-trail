@@ -70,7 +70,7 @@ body,
     box-sizing: border-box;
     padding: 16px;
     /* border: 1px solid yellow; */
-    width: 50%;
+    width: 48%;
     display: inline-block;
 }
 .info h2{
@@ -98,20 +98,56 @@ body,
     font-size: 20px;
     font-weight: 900;
     text-transform: uppercase;   
+    cursor: pointer;
 }
 
 .blurred-bg-container .form{
     display: inline-block;
-    border: 1px solid blue;
-
+    /* border: 1px solid blue; */
+    width: 48%;
+    overflow: hidden;
 
 }
 
 .form input{
 display: block;
+width: 90%;
+height: 30px;
+margin: 20px;
+}
+::placeholder{
+    color:black;
+}
+.form select{
+    /* background: white; */
+    width: 91%;
+    margin-left: 20px;
+    height: 35px;
+
+    -webkit-appearance: none; 
+   /* -moz-appearance: none;
+   appearance: none;      */
+   background:  white url(../img/arrowSmall.png)  no-repeat 100% 50%;
+  cursor: pointer;
 }
 
+ 
+.form option{
+    width: 100%;
 
+}
+
+.form label{
+    display: inline;
+    color: white;
+    font-size: 10px;
+
+}
+/* .form input[type="checkbox"]{
+    
+    size: 5px
+
+} */
 
 
 
