@@ -20,8 +20,8 @@ body,
     height: 76%;
     /* border: solid 1px red; */
     position: absolute;
-    top: 68%;
-    left: 53.3%; 
+    top: 70%;
+    left: 53.9%;
     transform: translate(-50%, -50%);
     overflow: hidden;
     z-index: 1;
@@ -43,16 +43,21 @@ body,
     display: flex;
     justify-content: space-around;
     border-bottom: 1px grey solid;
+    position: relative;
+    bottom: 3%;
 }
 .icons img{
     cursor: pointer;
-    padding-bottom: 24px
+    padding-bottom: 16px
 }
 .blurred-bg-container .text {
     padding: 32px;
     /* background: rgba(255, 255, 255, 0.3); */
     /* height: 100%; */
     box-sizing: border-box; /* so that padding is included in height */
+    position: relative;
+    bottom: 2%;
+    right: 2%;
   }
 
   .text h1{
@@ -68,21 +73,26 @@ body,
 .blurred-bg-container .info{
     /* height: 100%; */
     box-sizing: border-box;
-    padding: 16px;
+    padding-left: 3%;
     /* border: 1px solid yellow; */
-    width: 48%;
+    width: 51%;
     display: inline-block;
+    position: relative;
+    bottom: 100px;
+
 }
 .info h2{
     color: white;
     font-size: 20px;
-    padding: 2px;
-    font-family: sans-serif
+    /* padding: 2px; */
+    font-family: sans-serif;
+    line-height: 30px;
 }
 .info p{
     color: white;
     font-family: sans-serif;
     font-size: 15px;
+    line-height: 25px;
 }
 
 .blurred-bg-container .register{
@@ -104,54 +114,78 @@ body,
 .blurred-bg-container .form{
     display: inline-block;
     /* border: 1px solid blue; */
-    width: 48%;
+    width: 47%;
     overflow: hidden;
 
 }
 
-.form input{
-display: block;
-width: 90%;
-height: 30px;
-margin: 20px;
+.txt{
+    display: block;
+    width: 95%;
+    height: 34px;
+    margin: 22px 20px;
+    position: relative;
+    right: 23px;
+
+}
+input[type="email"]{
+    position: relative;
+    top: 10px;
 }
 ::placeholder{
     color:black;
+    position: relative;
+    left: 4px;
 }
 .form select{
     /* background: white; */
-    width: 91%;
-    margin-left: 20px;
+    width: 96%;
+    margin: 25px 20px;
     height: 35px;
 
     -webkit-appearance: none; 
    /* -moz-appearance: none;
    appearance: none;      */
    background:  white url(../img/arrowSmall.png)  no-repeat 100% 50%;
-  cursor: pointer;
+   cursor: pointer;
+   position: relative;
+   right: 23px;
 }
 
  
 .form option{
     width: 100%;
+    margin: 28px 20px ;
 
 }
-label {
-    font-size: 14px;
+.form .agree {
+    font-size: 12px;
     color: white;
-
+    text-align: left;
+   
+    /* border: solid 1px yellow; */
+    /* padding: 30px; */
+    /* float: left; */
    }
    
   
-input[type="checkbox"]{
+input[type="checkbox"]{   
+    
+    background-color: green;
     /* -webkit-appearance: none; */
     display: inline;
     width: 20px;
     height: 20px;
     margin: 20px;
-    background-color: green;
+    margin-top: 20px;
+ 
+    /* border: solid 1px red; */
+    float: left;
 
 }   
+
+
+
 /* .form label{
     display: inline;
     color: white;
