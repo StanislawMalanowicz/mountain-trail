@@ -21,19 +21,21 @@ $reg.on('click',() => {
     if ($email.val().indexOf('@') === -1){
         console.log('to nie jest email')
         em = false;   
-        // $tool.css('display', 'block')
     }else{
         console.log('to jest email')
         em = true;
-        // $tool.css('display', 'none')
     }
     
     if ($name.val().length === 0){
         console.log('krotkie to imie')
         nm = false;
+        $tool.show('fast')
+
     }else{
         console.log('teraz juz troche lepiej ;)')
          nm = true;
+         $tool.hide('slow')
+
     }
 
     if(!$select.val()){
@@ -52,7 +54,7 @@ $reg.on('click',() => {
         console.log('zaakceptuj regulamin ośle')
         isChecked = false;
     }
-    nm && em && country && isChecked? alert("szerokiej drogi"): alert('cos tutaj nie gra;(')
+    // nm && em && country && isChecked? alert("szerokiej drogi"): alert('cos tutaj nie gra;(')
 
         
 })
