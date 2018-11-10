@@ -118,7 +118,7 @@ body,
 
 .blurred-bg-container .form{
     display: inline-block;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     width: 47%;
     overflow: hidden;
 
@@ -160,8 +160,16 @@ body,
     top: -10px;
     right: -169px;
 }
+#email{
+    top: 271px;
 
-
+}
+#country{
+    top: 345px;
+}
+#reg{
+    top: 403px;
+}
 input[type="email"]{
     position: relative;
     top: 13px;
@@ -233,73 +241,13 @@ input[type="checkbox"]{
 
 
 
-/* .form label{
-    display: inline;
-    color: white;
-    font-size: 10px;
+@media (max-width : 952px){
+    .form{
+        background: green;
+        display: block;
 
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* *{
-    box-sizing: content-box;
-    margin: 0;
-} */
-
-/* body{ */
-    /* background-image:url('../img/background.jpg');
-    background-attachment:fixed;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    /* margin:0; */
-/* } */
-/* h1{
-    color: blue;
+    }
+    .info{
+        display: block;
+    }
 }
-.main{
-    position: absolute;
-    width: 300px;
-    height: 200px;
-    z-index: 15;
-    top: 50%;
-    left: 50%;
-    margin: -100px 0 0 -150px;
-    border: solid black 1px;
- 
-  
-}
-.blurred-bg-container{
-    background: url('../img/background.jpg');
-    height: 100vh;
-    background-size: cover
-}
-.blurred-bg-container .content{
-    background: #fff;
-    width: 50%;
-    height: 40%;
-    border-radius: 8px;
-    box-shadow: 0 0 32px rgba(0,0,0,0.5);
-    position: absolute;
-    top: 50%;
-    left: 40% 
-} */

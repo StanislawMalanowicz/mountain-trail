@@ -49,17 +49,18 @@
                 </div>
                 <div class="form">
                     <form>
-                        <div class="tooltip">imię jest za długie</div>
-                        <input class="txt" type="text" placeholder="imię i nazwisko">
-                        <input class="txt" type="email" placeholder="email">
+                        
+                        <input class="txt" type="text" placeholder="imię i nazwisko"><div class="tooltip" id="name">podaj imię i nazwisko</div></input>
+                        <input class="txt" type="email" placeholder="email"><div class="tooltip" id="email">Email musi zawierać @</div></input>
+                       
                         <select  >
                                 <option value="" disabled selected>kraj pochodzenia</option>
                             <option value="Usa">Usa</option>
                             <option value="Poland">Poland</option>
                             <option value="Russia">Russia</option>
                         </select>
-                        
-                        <input type="checkbox" name="checkbox" >
+                        <div class="tooltip" id="country">Wybierz kraj</div>
+                        <input type="checkbox" name="checkbox" ><div class="tooltip" id="reg">Zaakceptuj regulamin</div>
                         <div class="agree">
                            
                             Wyrażam zgodę na przetwarzania podanych przezemnie danych osobowych.
