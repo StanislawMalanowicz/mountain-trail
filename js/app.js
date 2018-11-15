@@ -1,7 +1,8 @@
 const hello = $('h1')
-// hello.on('click', ()=>{
-//     alert('jquerry działa ;)')
-// } )
+hello.on('click', ()=>{
+    // alert('jquerry działa ;)')
+    $regTool.show('fast');
+} )
 
 
 const $reg = $('.register')
@@ -35,12 +36,12 @@ $reg.on('click',() => {
     if ($name.val().length === 0){
         console.log('krotkie to imie')
         nm = false;
-        this($nameTool.show('fast'))
+        $nameTool.show('fast')
 
     }else{
         console.log('teraz juz troche lepiej ;)')
          nm = true;
-         this($nameTool.hide('slow'))
+         $nameTool.hide('slow')
 
     }
 
@@ -54,14 +55,14 @@ $reg.on('click',() => {
         $countryTool.hide('slow')
     }
 
-    if($check.is(':checked')){
+    if(!$check.is(':checked')){
         console.log('zaznaczone')
-        isChecked = true;
+        isChecked = false;
         // alert('zaznaczone:)')
         $regTool.show('fast')
     }else{
         console.log('zaakceptuj regulamin ośle')
-        isChecked = false;
+        isChecked = true;
         $regTool.hide('slow')
     }
     nm && em && country && isChecked? alert("szerokiej drogi"): alert('cos tutaj nie gra;(')
@@ -69,7 +70,13 @@ $reg.on('click',() => {
         
 })
 
-
+// $check.on('change', ()=>{
+//     if($check.is(':checked')){
+//         console.log('tralalala')
+//     }else{
+//         console.log("bleee")
+//     }
+// })
 
 
 
